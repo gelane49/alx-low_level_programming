@@ -1,19 +1,17 @@
 #include "main.h"
+
 /**
- * main - Write a program that prints _putchar, followed by a new line.
- *
- * Return: 0
+ * print_alphabet_x10 - Prints 10 times the alphabet, in lowercase.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+	int count = 0;
+	char letter;
+
+	while (count++ <= 9)
+	{
+		for (letter = 'a'; letter <= 'z'; letter++)
+			_putchar(letter);
+		_putchar('\n');
+	}
 }
